@@ -108,6 +108,7 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     padding: 0px 8%;
+    margin-top: 60px;
 }
 
 .home-section-responsive{
