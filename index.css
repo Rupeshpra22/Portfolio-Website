@@ -219,6 +219,10 @@ nav a:hover{
     color:#394867;
     padding: 10px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
 }
 
 .skill-container{

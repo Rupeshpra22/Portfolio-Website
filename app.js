@@ -67,16 +67,23 @@ nav.addEventListener('click', ()=>{
 for (let skill of skills) {
     const mySkills = document.querySelector(".my-skills");
     const skillContainerEl = document.createElement("div");
-    const labelEl = document.createElement("label");
+    const skills = document.createElement("div");
+    const skillName = document.createElement("div");
+    const skillPercentage = document.createElement("div");
     const skillbarEl = document.createElement("div");
     const skillpercentageEl = document.createElement("div");
     skillContainerEl.classList.add("skill-container");
-    labelEl.classList.add("skill");
-    labelEl.innerText = `${skill.skillName}`;
+    skills.classList.add("skill");
+    skillName.classList.add('portfolio-color');
+    skillPercentage.classList.add('portfolio-color');
+    skillName.innerText = `${skill.skillName}`;
+    skillPercentage.innerText = `${skill.percentage}%`
     skillbarEl.classList.add("skill-bar");
     skillpercentageEl.classList.add("skill-percentage");
     skillpercentageEl.style.width = `${skill.percentage}%`;
-    skillContainerEl.appendChild(labelEl);
+    skills.appendChild(skillName);
+    skills.appendChild(skillPercentage)
+    skillContainerEl.appendChild(skills);
     skillbarEl.appendChild(skillpercentageEl);
     skillContainerEl.appendChild(skillbarEl);
     mySkills.appendChild(skillContainerEl);
