@@ -158,6 +158,7 @@ nav a:hover{
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    padding: 25px; 
 }
 
 .my-photo{
@@ -420,7 +421,6 @@ footer h1{
 @media screen and (max-width: 800px){
     .about-container{
         flex-direction: column;
-        justify-content: flex-start;
         padding-top: 60px;
     }
     
@@ -435,7 +435,6 @@ footer h1{
 
     .about-section{
         height: auto;
-        justify-content: flex-start;
     }
 
     .photo-container{
