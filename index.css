@@ -298,6 +298,11 @@ nav a:hover{
     width: 100%;
 }
 
+.project-image-border{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 .project-name{
     color: #394867;
     text-align: center;

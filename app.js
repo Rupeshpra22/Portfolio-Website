@@ -24,7 +24,7 @@ const projects = [
         name: "Beach Resort",
         githubUrl: "https://github.com/Rupeshpra22/resort",
         demoUrl: "https://book-resort.netlify.app/",
-        description: "Beach resort is a hotel listing application where user can check varieties of hotel, User can also search hotel based on its requirement",
+        description: "Beach resort is a hotel listing application where user can check varieties of hotel, User can also search hotel based on the requirement",
         techUsed: ["ReactJs", "HTML", "CSS"]
     },
     {
@@ -95,7 +95,7 @@ for (let project of projects) {
     projectCardEle.classList.add("project-card");
     projectCardEle.innerHTML = `
                     <div class="project-image">
-                        <img src=${project.img.url} alt=${project.img.alt} width="100%" height="150px">
+                        <img src=${project.img.url} alt=${project.img.alt} width="100%" height="150px" class="project-image-border">
                     </div>
                     <div class="project-name">${project.name}</div>
                     <div class="project-links">
