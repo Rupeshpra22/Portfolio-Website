@@ -278,6 +278,7 @@ nav a:hover{
     align-items: center;
     justify-content: space-evenly;
     padding-top: 20px;
+    flex-wrap: wrap;
 }
 
 .project-card{
@@ -450,6 +451,38 @@ footer h1{
 @media screen and (max-width: 600px){
     .skill-container{
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1220px){
+
+    .projects-section{
+        height: auto;
+        padding-bottom: 70px;
+    }
+    .project-card{
+        width: 28%;
+    }
+}
+
+
+@media screen and (max-width: 1055px){
+    .project-card{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 985px){
+    .project-card{
+        width: 40%;
+        margin:15px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .project-card{
+        width: 50%;
     }
 }
 
