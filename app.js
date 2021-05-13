@@ -12,7 +12,7 @@ const skills = [
 
 const projects = [
     {
-        img: { url: './assets/todo.jpg', alt: "todo-app"},
+        img: { url: './assets/todo.jpg', alt: "todo-app" },
         name: "Todo Application",
         githubUrl: "https://github.com/Rupeshpra22/Todo-Application",
         demoUrl: "https://rupeshpra22.github.io/Todo-Application/",
@@ -20,7 +20,7 @@ const projects = [
         techUsed: ["HTML", "CSS", "Javascript"]
     },
     {
-        img: { url: './assets/beach-hotel.jpg', alt: "beach-resort"},
+        img: { url: './assets/beach-hotel.jpg', alt: "beach-resort" },
         name: "Beach Resort",
         githubUrl: "https://github.com/Rupeshpra22/resort",
         demoUrl: "https://book-resort.netlify.app/",
@@ -28,7 +28,7 @@ const projects = [
         techUsed: ["ReactJs", "HTML", "CSS"]
     },
     {
-        img: { url: './assets/booklist.jpg', alt: "booklist-app"},
+        img: { url: './assets/booklist.jpg', alt: "booklist-app" },
         name: "Book Lisiting Application",
         githubUrl: "https://github.com/Rupeshpra22/Booklist",
         demoUrl: "https://rupeshpra22.github.io/Booklist/",
@@ -36,6 +36,33 @@ const projects = [
         techUsed: ["HTML", "CSS", "Javascript"]
     }
 ]
+
+const hamburger = document.querySelector(".hamburger");
+const nav =  document.querySelector("nav");
+const homeSection = document.querySelector(".home-section");
+let isHamburgerOpen = false;
+hamburger.addEventListener("click", () => {
+    if (isHamburgerOpen === false) {
+        hamburger.classList.add('open');
+        nav.classList.add('nav-open');
+        homeSection.classList.add("home-section-responsive");
+        isHamburgerOpen = true;
+    }else{
+        hamburger.classList.remove('open');
+        nav.classList.remove('nav-open');
+        homeSection.classList.remove("home-section-responsive");
+        isHamburgerOpen = false;
+    }
+})
+
+nav.addEventListener('click', ()=>{
+    if(nav.className.includes('nav-open')){
+        hamburger.classList.remove('open');
+        nav.classList.remove('nav-open');
+        homeSection.classList.remove("home-section-responsive");
+        isHamburgerOpen = false;
+    }
+})
 
 for (let skill of skills) {
     const mySkills = document.querySelector(".my-skills");

@@ -42,6 +42,60 @@ nav a:hover{
     border-radius: 5px;
 }
 
+.hamburger{
+    height: 5px;
+    background-color: white;
+    width: 30px;
+    border-radius: 5px;
+    display: none;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.hamburger::before, .hamburger::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    background-color: white;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.hamburger::before{
+    transform: translateY(-10px);
+}
+
+.hamburger::after{
+    transform: translateY(10px);
+}
+
+.open{
+    background-color: transparent;
+}
+
+.hamburger.open::before{
+    transform: rotate(45deg)
+}
+
+.hamburger.open::after{
+    transform: rotate(-45deg)
+}
+
+.nav-open{
+    position: absolute;
+    top: 60px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #394867;
+    width: 100%;
+    left: 0px;
+    transition: all .2s ease-in;
+    box-shadow: 2px 1px 4px 2px #29363c;
+}
+
 .resume{
     border: 1px solid white;
     border-radius: 5px;
@@ -54,6 +108,10 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     padding: 0px 8%;
+}
+
+.home-section-responsive{
+    margin-top: 260px
 }
 
 .intro{
@@ -327,4 +385,22 @@ footer h1{
 .heart{
     color: red
 }
+
+@media screen and (max-width: 650px){
+    nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .resume{
+        width: fit-content;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}
+
+
 
