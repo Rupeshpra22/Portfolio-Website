@@ -334,7 +334,7 @@ nav a:hover{
 }
 
 footer{
-    height: 20vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
