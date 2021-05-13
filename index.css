@@ -384,7 +384,9 @@ footer h1{
 
 .footer-heart-text{
     padding: 20px;
+    text-align: center;
 }
+
 .heart{
     color: red
 }
