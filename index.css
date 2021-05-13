@@ -352,7 +352,7 @@ footer h1{
 .other-contacts{
     display: flex;
     justify-content: space-around;
-    width: 12%;
+    width: 150px;
 }
 
 .linkedin, .facebook, .instagram{
