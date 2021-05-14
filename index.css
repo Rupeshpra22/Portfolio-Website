@@ -268,8 +268,9 @@ nav a:hover{
 }
 
 .projects-section{
-    height:100vh;
+    height: auto;
     background-color: #394867;
+    padding-bottom: 70px;
 }
 
 .projects-title{
@@ -446,6 +447,14 @@ footer h1{
     .my-photo{
         height: 250px;
     }
+
+    .skill{
+        width: 70%;
+    }
+
+    .skill-bar{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 800px) and (min-width: 600px){
@@ -492,7 +501,7 @@ footer h1{
 
 @media screen and (max-width: 620px){
     .project-card{
-        width: 60%;
+        width: 65%;
     }
 }
 
