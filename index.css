@@ -298,10 +298,6 @@ nav a:hover{
     transition : all .2s ease-in-out
 }
 
-.project-card:hover{
-    transform: scale(1.1);
-}
-
 .project-image{
     width: 100%;
 }
