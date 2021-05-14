@@ -190,6 +190,7 @@ nav a:hover{
 
 .about-me-text{
     padding: 10px;
+    line-height: 20px;
 }
 
 .skills-section{
@@ -358,6 +359,8 @@ footer h1{
 }
 .footer-text{
     padding: 10px;
+    text-align: center;
+    line-height: 20px;
 }
 
 .other-contacts{
