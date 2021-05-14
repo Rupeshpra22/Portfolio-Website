@@ -95,7 +95,7 @@ for (let project of projects) {
     projectCardEle.classList.add("project-card");
     projectCardEle.innerHTML = `
                     <div class="project-image">
-                        <img src=${project.img.url} alt=${project.img.alt} width="100%" height="150px" class="project-image-border">
+                        <img src=${project.img.url} alt=${project.img.alt} width="100%" height="175px" class="project-image-border">
                     </div>
                     <div class="project-name">${project.name}</div>
                     <div class="project-links">
