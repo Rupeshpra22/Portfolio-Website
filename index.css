@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 .portfolio-color{
