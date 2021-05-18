@@ -95,7 +95,8 @@ nav a:hover{
     width: 100%;
     left: 0px;
     transition: all .2s ease-in;
-    box-shadow: 0px 6px 4px -4px #29363c
+    box-shadow: 0px 6px 4px -4px #29363c;
+    align-items: center;
 }
 
 .resume{
